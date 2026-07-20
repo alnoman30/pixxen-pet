@@ -1,0 +1,4069 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Grooming</title>
+  <!-- Splide CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-white">
+
+  <nav class="bg-[#FFF7E9] border-b border-[#650B14]">
+    <div class="mx-auto">
+      <div class="flex items-center justify-between h-12">
+        <div class="flex items-center sm:gap-4 gap-3">
+          <!-- Desktop Sidebar Button -->
+          <button id="desktop-sidebar" aria-label="Toggle menu"
+            class=" hidden lg:block text-green1 hover:text-green2 xl:px-19 md:px-6 py-5 bg-[#FFFCF8] hover:bg-[#E7D4A6] cursor-pointer transition-colors"
+            aria-label="Toggle menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="#36432A" />
+              <rect y="6" width="42" height="2" fill="#36432A" />
+            </svg>
+
+
+
+          </button>
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-toggle"
+            class="mobile-hambergur-bg-salon lg:hidden text-white hover:text-green1 p-2 transition-colors bg-[#F4EDDA]"
+            aria-label="Toggle mobile menu">
+            <svg width="42" height="8" viewBox="0 0 42 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="42" height="2" fill="#36432A" />
+              <rect y="6" width="42" height="2" fill="#36432A" />
+            </svg>
+
+
+          </button>
+          <a href="index.html" class="flex items-center">
+            <!-- replace with your logo img -->
+            <img src="assets/images/petgrooming-pixxen-logo.png" alt="Pixxen" class="img-fluid sm:w-auto w-34">
+          </a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-8">
+
+          <!-- ====== SERVICES DROPDOWN ====== -->
+          <div class="desktop-dropdown">
+            <a href="#services"
+              class="text-[#650B14] hover:text-[#FFB90B] transition-colors text-base font-medium desktop-dropdown-toggle">
+              SERVICES <span class="desktop-dropdown-icon ml-1">+</span>
+            </a>
+
+            <!-- Mega panel: list LEFT + grid RIGHT -->
+            <div class="desktop-dropdown-menu">
+
+              <!-- LEFT: service items -->
+              <ul class="dropdown-service-list">
+                <li>
+                  <a href="mobile-app-design.html">
+                    <span class="service-icon">
+                      <!-- Mobile icon -->
+                      <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    MOBILE APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="dashboard-design.html">
+                    <span class="service-icon">
+                      <!-- Dashboard/pie icon -->
+                      <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    DASHBOARD DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="website-design.html">
+                    <span class="service-icon">
+                      <!-- Monitor icon -->
+                      <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    WEBSITE DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="web-application-design.html">
+                    <span class="service-icon">
+                      <!-- Laptop icon -->
+                      <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    WEB APP DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="saas-design.html">
+                    <span class="service-icon">
+                      <!-- Desktop/screen icon -->
+                      <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    SAAS DESIGN
+                  </a>
+                </li>
+                <li>
+                  <a href="branding-design.html">
+                    <span class="service-icon">
+                      <!-- Brand/star icon -->
+                      <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+                    </span>
+                    BRANDING
+                  </a>
+                </li>
+              </ul>
+
+              <!-- right: items -->
+              <div class="flex items-end">
+                <img src="assets/images/dropdown-shape.svg" alt="">
+              </div>
+
+            </div>
+            <!-- end .desktop-dropdown-menu -->
+          </div>
+          <!-- ====== end SERVICES ====== -->
+
+          <a href="case-study.html"
+            class="text-[#650B14] hover:text-[#FFB90B] transition-colors text-base font-medium">CASE STUDIES</a>
+          <a href="about.html"
+            class="text-[#650B14] hover:text-[#FFB90B] transition-colors text-base font-medium">ABOUT</a>
+          <a href="blog.html"
+            class="text-[#650B14] hover:text-[#FFB90B] transition-colors text-base font-medium">BLOG</a>
+          <a href="contact.html"
+            class="text-[#650B14] hover:text-[#FFB90B] transition-colors text-base font-medium">Contact</a>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex items-center">
+          <a href="contact.html"
+            class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border border-[#650B14]  transition-all font-medium">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base  font-medium text-[#650B14] uppercase">OUR Contact</span>
+              <span class="t-down text-base  font-medium text-[#650B14] uppercase">OUR Contact</span>
+            </div>
+          </a>
+          <a href="contact.html"
+            class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#FFB90B] text-white transition-colors font-bold">
+            <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+              <span class="t-up text-base  font-medium text-[#650B14] uppercase">Let’s Connect</span>
+              <span class="t-down text-base  font-medium text-[#650B14] uppercase">Let’s Connect</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Mobile LET'S CONNECT -->
+        <a href="contact.html"
+          class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#BD8600] text-white transition-colors font-bold">
+          <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+            <span class="t-up text-sm  font-medium text-white uppercase">OUR Let’s Connect</span>
+            <span class="t-down text-sm  font-medium text-white uppercase">OUR Let’s Connect</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+    <!-- Dark overlay -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+
+    <!-- Wrapper holds both panels -->
+    <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+
+      <!-- PANEL 1: Main Menu -->
+      <div id="mm-main" class="mm-panel mm-main">
+        <div class="mm-main-header">
+          <span class="mm-title">Menu</span>
+          <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+
+          </button>
+        </div>
+
+        <ul class="mm-nav-list">
+          <li>
+            <!-- SERVICES: opens panel 2 -->
+            <button id="mm-services-trigger" class="mm-nav-link w-full text-left"
+              style="background:none;border:none;cursor:pointer;">
+              SERVICES
+              <span class="mm-plus">+</span>
+            </button>
+          </li>
+          <li><a href="case-study.html" class="mm-nav-link">case studies</a></li>
+          <li><a href="about.html" class="mm-nav-link">about</a></li>
+          <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+          <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+          <li><a href="team.html" class="mm-nav-link">team</a></li>
+          <li>
+            <div class="flex justify-start  mt-8 mx-4">
+              <a href="contact.html"
+                class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-green1 transition-all duration-200">
+
+                <div class="btn-inner relative z-2 flex items-center gap-3">
+                  <div
+                    class="icon-circle h-6 w-6 rounded-full bg-green4 flex items-center justify-center overflow-hidden">
+                    <div class="icon-slider flex flex-row ">
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-green1)" />
+                      </svg>
+                      <svg class="arrow-icon w-4 h-4 shrink-0 mx-2.5" viewBox="0 0 16 16">
+                        <path
+                          d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                          fill="var(--color-green1)" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="text-mask md:h-7.5 h-6 overflow-hidden flex flex-col">
+                    <span class="t-up md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                      Connect</span>
+                    <span class="t-down md:text-[20px] text-base  font-medium text-green4 uppercase">Let’s
+                      Connect</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- LET'S CONNECT -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-47.5" alt="mobile menu">
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- PANEL 2: Services -->
+      <div id="mm-services" class="mm-panel mm-services">
+        <div class="mm-services-header">
+          <button id="mm-back" class="mm-back-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            BACK
+          </button>
+          <button id="mm-services-close" class="mm-close-btn" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                fill="white" />
+            </svg>
+
+          </button>
+        </div>
+
+        <div>
+          <div class="mm-services-title">Services</div>
+
+          <!-- 2×3 grid -->
+          <div class="mm-services-grid">
+            <!-- Mobile App Design -->
+            <a href="mobile-app-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon1.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">MOBILE APP DESIGN</span>
+            </a>
+            <!-- Dashboard Design -->
+            <a href="dashboard-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon2.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">DASHBOARD DESIGN</span>
+            </a>
+            <!-- Website Design -->
+            <a href="website-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon3.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">WEBSITE DESIGN</span>
+            </a>
+            <!-- Web App Design -->
+            <a href="web-application-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon4.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">WEB APP DESIGN</span>
+            </a>
+            <!-- SaaS Design -->
+            <a href="saas-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon5.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">SAAS DESIGN</span>
+            </a>
+            <!-- Branding -->
+            <a href="branding-design.html" class="mm-service-card">
+              <span class="card-icon">
+                <img src="assets/images/dropdownicon6.svg" class="img-fluid" alt="dropdown-icon">
+              </span>
+              <span class="card-label">BRANDING</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- decorative bottom grid -->
+        <div>
+          <div>
+            <div class="w-full flex justify-end">
+              <img src="assets/images/menu-mobile-shape.svg" class="img-fluid sm:w-auto w-47.5" alt="mobile menu">
+            </div>
+            <img src="assets/images/mobile-bottom-logo.svg" class="img-fluid w-full" alt="mobile menu">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end mobile-menu-wrapper -->
+  </nav>
+
+  <!-- FULL PAGE MENU -->
+  <div id="pixxen-menu" role="dialog" aria-modal="true" aria-label="Main navigation">
+
+    <!-- TOP PANEL: slides in from top -->
+    <div class="menu-top" id="menu-top">
+
+      <!-- Grid decoration top-left -->
+      <div class="deco-cross" style="top:0px; left:0px;">
+        <img src="assets/images/large-menu-top.svg" class="img-fluid" alt="">
+      </div>
+
+      <!-- Grid decoration top-right area -->
+      <div class="deco-cross" style="bottom:0px; right:0px;">
+        <img src="assets/images/large-menu-bottom.svg" class="img-fluid" alt="">
+      </div>
+
+      <!-- LET'S CONNECT -->
+
+      <a href="contact.html"
+        class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#BD8600] text-white transition-colors font-bold">
+        <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+          <span class="t-up text-base  font-medium text-white uppercase">Let’s Connect</span>
+          <span class="t-down text-base  font-medium text-white uppercase">Let’s Connect</span>
+        </div>
+      </a>
+
+      <!-- CLOSE BUTTON -->
+      <div class="close-wrap">
+        <button class="close-btn" id="menu-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L18 18M6 18L18 6" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="nav-columns" id="nav-columns">
+
+        <div class="nav-col" id="col-services">
+          <div class="nav-col-title">Services</div>
+          <ul>
+            <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+            <li><a href="dashboard-design.html">Dashboard Design</a></li>
+            <li><a href="website-design.html">Website Design</a></li>
+            <li><a href="web-application-design.html">Web App Design</a></li>
+            <li><a href="saas-design.html">SaaS Design</a></li>
+            <li><a href="branding-design.html">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-pixxen">
+          <div class="nav-col-title">Pixxen</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="case-study.html">Case Studies</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-resources">
+          <div class="nav-col-title">Resources</div>
+          <ul>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col" id="col-legal">
+          <div class="nav-col-title">Legal</div>
+          <ul>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </div><!-- /menu-top -->
+
+
+    <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+    <div class="menu-bottom" id="menu-bottom">
+
+
+      <!-- LOGO -->
+      <div class="bottom-logo" id="bottom-logo">
+        <img src="assets/images/largemenu-pixxen-logo.svg" class="img-fluid" alt="largemenu">
+      </div>
+
+    </div><!-- /menu-bottom -->
+
+  </div>
+  <!-- / FULL PAGE MENU -->
+
+
+  <!-- banner section start  -->
+  <section
+    class="relative overflow-hidden bg-[#FFF7E9] px-4 sm:px-8 pt-20 lg:pt-24 pb-4 sm:pb-6 lg:pb-8 lg:min-h-screen flex flex-col justify-between">
+
+    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-stretch grow">
+
+      <!-- LEFT COLUMN -->
+      <div class="flex flex-col justify-between text-center lg:text-start h-full">
+        <div>
+          <!-- Heading -->
+          <h1
+            class="font-sekuya uppercase text-[#650B14] text-[28px] sm:text-[34px] lg:text-[47px] leading-[110%] max-w-xl mx-auto lg:mx-0">
+            Pet Care Websites Built To Drive More Bookings.
+          </h1>
+
+          <!-- CTA -->
+          <div class="mt-6">
+            <a href="#"
+              class="inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+              Book A Free 15-Min Call
+            </a>
+          </div>
+
+          <!-- Services -->
+          <div
+            class="mt-6 lg:mt-10 font-sekuya text-[#650B14] text-[12px] lg:text-base leading-[120%] max-w-md mx-auto lg:mx-0">
+            For grooming · daycare · boarding · training · walking · sitting ·
+            mobile grooming · veterinary-adjacent care
+          </div>
+        </div>
+
+        <!-- Mobile + Tablet Hero Image -->
+        <div class="lg:hidden flex flex-col items-center mt-5">
+
+          <!-- Animated Circle Badge -->
+          <div class="relative w-26 h-26 sm:w-36 sm:h-36 mb-6 flex items-center justify-center">
+
+            <!-- Rotating Circle Text -->
+            <div class="absolute inset-0 animate-spin-slow">
+              <img src="assets/images/petgrooming-circle-text.png" alt="Circle Text"
+                class="w-full h-full object-contain">
+            </div>
+
+            <!-- Center Logo -->
+            <div class="relative z-10 flex items-center justify-center">
+              <img src="assets/images/petgrooming-scissor.png" alt="Logo" class="w-[65%] sm:w-[70%] object-contain">
+            </div>
+
+          </div>
+
+
+          <!-- Dog Image -->
+          <img src="assets/images/petgrooming-banner-dog.png" alt="Pet Dog Care"
+            class="w-full max-w-62.5 sm:max-w-75 object-contain">
+
+        </div>
+
+
+        <!-- Pricing -->
+        <div class="mt-5 lg:mt-12">
+          <p class="font-sekuya text-sm lg:text-base text-[#650B14] mb-2 lg:mb-3">
+            Everything Included
+          </p>
+
+          <div class="border-y border-[#650B14] py-1.5 lg:py-3">
+            <span class="font-sekuya text-[28px] sm:text-[32px] lg:text-[42px] text-[#D8443F] leading-none">
+              $999
+            </span>
+          </div>
+
+          <p class="font-sekuya uppercase text-sm lg:text-base text-[#650B14] mt-2 lg:mt-3">
+            One-Time
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- CENTER SPACER -->
+      <div class="hidden lg:block"></div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="flex flex-col justify-between text-start h-full">
+
+        <!-- Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[140%] max-w-xl">
+          Logo, branding, custom pet care business website, SEO content built
+          around real pet-owner search behavior, on-page SEO, and Google Business
+          Profile setup. Every page engineered for the moment a pet owner decides
+          whether to book your service or call the next groomer with available
+          appointments.
+        </p>
+
+        <!-- Features -->
+        <ul
+          class="mt-5 lg:mt-0 space-y-1.5 md:space-y-2 lg:space-y-4 text-[#650B14] text-sm lg:text-base font-bold leading-[140%]">
+
+          <li class="flex items-start">
+            <img src="assets/images/petgrooming-checkmark.svg" alt="" class="w-4 h-4 mt-1 mr-3 shrink-0">
+            <span>
+              Trusted by independent pet care businesses
+            </span>
+          </li>
+
+          <li class="flex items-start">
+            <img src="assets/images/petgrooming-checkmark.svg" alt="" class="w-4 h-4 mt-1 mr-3 shrink-0">
+            <span>
+              14-day delivery
+            </span>
+          </li>
+
+          <li class="flex items-start">
+            <img src="assets/images/petgrooming-checkmark.svg" alt="" class="w-4 h-4 mt-1 mr-3 shrink-0">
+            <span>
+              You own the site, content, and domain
+            </span>
+          </li>
+
+          <li class="flex items-start">
+            <img src="assets/images/petgrooming-checkmark.svg" alt="" class="w-4 h-4 mt-1 mr-3 shrink-0">
+            <span>
+              No retainers
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Desktop Graphics -->
+    <!-- Dog + Animated Circle Wrapper -->
+    <div
+      class="hidden lg:flex absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-135 flex-col items-center z-0 pointer-events-none">
+
+      <!-- Animated Circle Badge -->
+      <div class="relative w-28 h-28 sm:w-32 sm:h-32 lg:w-55.5 lg:h-55.5 mb-20 flex items-center justify-center">
+
+        <!-- Rotating Circle Text -->
+        <div class="absolute inset-0 animate-spin-slow">
+          <img src="assets/images/petgrooming-circle-text.png" alt="Circle Text" class="w-full h-full object-contain">
+        </div>
+
+        <!-- Center Logo -->
+        <div class="relative z-10 flex items-center justify-center">
+          <img src="assets/images/petgrooming-scissor.png" alt="Logo" class="w-[70%] lg:w-full object-contain">
+        </div>
+
+      </div>
+
+
+      <!-- Dog Image -->
+      <img src="assets/images/petgrooming-banner-dog.png" alt="Pet Dog Care" class="w-[75%] xl:w-full object-contain">
+    </div>
+
+  </section>
+  <!-- banner section end  -->
+
+
+  <!-- 09 Featured section -->
+  <section class="bg-white section-padding">
+
+    <div class="container ">
+
+      <!-- section heading -->
+      <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+        <!-- Top Pill Badge -->
+        <div class="mb-4 md:mb-6">
+          <span
+            class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+            Built for Pet Care Businesses
+          </span>
+        </div>
+
+        <!-- Main Title Header -->
+        <h2
+          class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+          9 Features Pet Care Owners Actually Use (And Most Websites Skip)
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+          Every feature on this list exists because we've seen it move the needle on booked leads. Nothing here is
+          decoration.
+        </p>
+      </div>
+
+      <!-- Features Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-8 w-full">
+
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-tags.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            No Transparent Pricing on Common Services
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Bath, full groom, breed-specific grooming, nail trim, teeth brushing — pet owners shop these. Sites hiding
+            prices behind 'Call for quote' lose to groomers publishing starting-at ranges per breed.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-calender.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Online booking trapped in PetExec or Gingr iframe
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Most pet care sites embed PetExec, Gingr, ProPet as a 600px iframe that breaks mobile and feels like a
+            separate site. Pet owners abandon the booking flow when the experience suddenly switches platforms.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-user.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            No groomer or trainer profiles with photos
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Pet parents want to know who's handling their dog. First names, years of experience, certifications (NCMG,
+            ABKA, IPDTA), specialty breeds — trust signals that shortcut anxious-first-time-customer hesitation.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-paws.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Generic services page where breed-specific pages should live
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Golden retriever grooming, poodle grooming, doodle de-matting — each is a separate search intent with
+            different time and pricing. One services page ranks for none.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-picture.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            No daycare or boarding photos visible
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Pet parents leaving dogs overnight want to see the kennel, play areas, sleeping setup. Sites without
+            facility photos lose to facilities that show them.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-syringe.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Vaccination requirements not surfaced
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            DHPP, rabies, bordetella, canine influenza — required for daycare and boarding. Hidden requirements turn
+            into front-desk frustration and lost first-visit conversions.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-subscription.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            No recurring grooming plan visibility
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              Monthly grooming, breed-appropriate schedules (every 6 weeks for poodles, every 4 for doodles), recurring
+              discounts — recurring revenue most pet care sites leave on the table.
+            </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-van.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            No mobile grooming distinction where applicable
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              Mobile groomers and brick-and-mortar groomers serve different buyer mindsets. Mobile lacks visibility on
+              most pet care sites that try to do both without splitting messaging.
+            </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-white border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-dog.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Aggressive-dog and special-needs policies hidden
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              Owners of reactive dogs or seniors with conditions need to know if you accept them. Sites silent on these
+              policies lose to facilities that publish them.
+            </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 09 Featured section -->
+
+
+  <!-- Marque section -->
+  <section class="py-6 sm:py-10 md:py-12 overflow-hidden">
+    <div class="w-[120%] -ml-[10%] md:w-full md:mx-auto -rotate-3 lg:-rotate-2">
+      <div id="petgrooming-text-marquee"
+        class="splide bg-[#650B14] py-2 sm:py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-12 rounded-full flex items-center font-sekuya">
+        <div class="splide__track">
+          <ul
+            class="splide__list items-center text-white text-sm sm:text-base md:text-lg leading-[130%] whitespace-nowrap">
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>grooming</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>daycare</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>boarding</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>training</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>walking</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>sitting</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>mobile grooming</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Marque section -->
+
+
+  <!-- Price plan section -->
+  <section class="bg-white text-[#6A1B13] section-padding relative ">
+    <div class="container ">
+      <div class="grid grid-cols-1 lg:grid-cols-12  items-start relative z-10">
+        <!-- Left Column -->
+        <div class="lg:col-span-6 flex flex-col lg:sticky lg:top-20 self-start">
+
+          <!-- section heading -->
+          <div class="pet-section-heading max-w-248 mx-auto  flex flex-col  mb-6 sm:mb-8 md:mb-12">
+            <!-- Top Pill Badge -->
+            <div class="mb-4 md:mb-6">
+              <span
+                class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+                Everything included
+              </span>
+            </div>
+
+            <!-- Main Title Header -->
+            <h2
+              class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+              What you'd pay separately vs what you pay us
+            </h2>
+
+            <!-- Subtitle Description -->
+            <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+              Six separate services from six providers, or one package, one team, one fixed price. Every deliverable
+              built
+              specifically for how pet care businesses clients research and buy.
+            </p>
+          </div>
+
+          <!-- Dog + Circle Wrapper -->
+          <div class="relative w-full mt-8 pointer-events-none">
+
+            <!-- Dog Image -->
+            <img src="assets/images/petgrooming-priceplan-dog.png" alt="Featured Dog Presentation Graphic"
+              class="w-full sm:w-auto lg:w-auto max-w-full lg:max-w-none h-auto object-contain mx-auto">
+
+            <!-- Animated Circle Badge -->
+            <div
+              class="absolute left-10 top-0 md:left-32 md:top-12 lg:top-0 lg:left-22  w-28 h-28 sm:w-32 sm:h-32 lg:w-55.5 lg:h-55.5 z-10 flex items-center justify-center">
+
+
+              <!-- Rotating Ring -->
+              <div class="absolute inset-0 animate-spin-slow">
+
+                <!-- Circle Text Image -->
+                <img src="assets/images/petgrooming-circle-text.png" alt="Circle Text"
+                  class="w-full h-full object-contain">
+
+              </div>
+
+
+              <!-- Center Logo -->
+              <div class="relative z-10 flex items-center justify-center">
+
+                <img src="assets/images/petgrooming-scissor.png" alt="Logo"
+                  class="w-[70%] sm:w-[80%] lg:w-full object-contain">
+
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <!-- Right Column -->
+        <div class="lg:col-span-6 flex flex-col w-full">
+
+          <div class="divide-y divide-[#650B14] border-t  border-[#650B14] mb-6">
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-pen.svg" alt="icon" class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    Logo + Brand Identity
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    Logo, palette, typography, brand kit. Warm professional aesthetic —
+                    animal-loving without saccharine, modern without clinical-cold.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$400+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-web.svg" alt="icon" class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    Custom 7-page pet care website
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    Home, Services, Pricing, About + team, Facility tour, Booking, Contact. Mobile-first, sub-2s load.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$1500+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-discover.svg" alt="icon"
+                  class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    SEO content with real keyword research
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    Page copy targeting 'dog groomer [city],' 'dog daycare [neighborhood],' breed-specific and
+                    service-specific searches.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$800+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-settings.svg" alt="icon"
+                  class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    Technical on-page SEO setup
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    PetStore, AnimalShelter, and LocalBusiness schema, meta titles per service, internal linking,
+                    sitemap,
+                    Search Console.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$500+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-google.svg" alt="icon"
+                  class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    Google Business Profile optimization
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    Categories, services, photos, NAP cleanup. Critical for 'dog groomer near me' and 'pet daycare near
+                    me' searches.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$500+</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item  -->
+            <div class="py-2 md:py-4 lg:py-6 flex items-start space-x-3 md:space-x-6">
+              <div class="shrink-0 w-10 h-10 md:w-16 md:h-16 ">
+                <img src="assets/images/petgrooming-priceplan-headset.svg" alt="icon"
+                  class="w-full h-full object-contain">
+              </div>
+
+              <div class="grow grid grid-cols-1 md:grid-cols-4 gap-2">
+                <div class="md:col-span-3">
+                  <h3
+                    class="font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%] mb-1.5 md:mb-3.5">
+                    30 days post-launch support
+                  </h3>
+                  <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                    Bug fixes, content updates, CMS training, A/B test of primary lead capture.
+                  </p>
+                </div>
+
+                <div class="md:text-right font-sekuya text-sm sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  <span class="line-through decoration-1 decoration-[#650B14]">$300+</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Totals -->
+          <div class="flex flex-col ">
+
+            <div
+              class="bg-[#FFC258] rounded-2xl sm:rounded-3xl md:rounded-4xl p-4 md:p-8 flex justify-between items-center text-[#6A1B13]">
+              <div class="flex items-center space-x-3">
+                <div class="shrink-0 w-5 h-5 md:w-8 md:h-8 ">
+                  <img src="assets/images/petgrooming-priceplan-total.svg" alt="icon"
+                    class="w-full h-full object-contain">
+                </div>
+                <span class="font-sekuya text-[12px] sm:text-base md:text-lg text-[#650B14] leading-[130%]">
+                  Total Elsewhere
+                </span>
+              </div>
+
+              <div class="md:text-right font-sekuya text-base md:text-xl lg:text-2xl text-[#650B14] leading-[130%]">
+                <span class="line-through decoration-1 decoration-[#650B14]">$3,900+</span>
+              </div>
+            </div>
+
+            <div
+              class="bg-[#650B14] rounded-2xl sm:rounded-3xl md:rounded-4xl p-4 md:p-8 flex justify-between items-center text-[#FFF8EA]">
+              <div class="flex items-center space-x-3">
+                <div class="shrink-0 w-5 h-5 md:w-8 md:h-8 ">
+                  <img src="assets/images/petgrooming-priceplan-pixxen.svg" alt="icon"
+                    class="w-full h-full object-contain">
+                </div>
+                <span class="font-sekuya text-[12px] sm:text-base md:text-lg text-[#FFC258] leading-[130%]">
+                  Pixxen Pet Care Pack
+                </span>
+              </div>
+
+              <span class="font-sekuya text-2xl md:text-5xl lg:text-[48px] text-[#FFC258]">
+                $999
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Price plan section -->
+
+
+  <!-- 09 Featured section -->
+  <section class="bg-[#FFF7E9] section-padding">
+
+    <div class="container ">
+
+      <!-- section heading -->
+      <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+        <!-- Top Pill Badge -->
+        <div class="mb-4 md:mb-6">
+          <span
+            class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+            Built for pet care businesses
+          </span>
+        </div>
+
+        <!-- Main Title Header -->
+        <h2
+          class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+          9 features pet care owners actually use (and most websites skip)
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+          Every feature on this list exists because we've seen it move the needle on booked leads. Nothing here is
+          decoration.
+        </p>
+      </div>
+
+      <!-- Features Card Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-8 w-full">
+
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-tags.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Transparent pricing by breed and service
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Bath, full groom, breed-specific pricing (small/medium/large/extra-large), nail trim, anal gland, teeth
+            brushing — visible per service with breed-coat-type filters.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-calender.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Native online booking, not an iframe
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            We integrate PetExec, Gingr, ProPet, 123Pet, Time to Pet via API where possible. Booking feels like part of
+            your site.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-user.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Groomer and trainer profile pages
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            First names, years of experience, certifications (NCMG, ABKA, IPDTA, CPDT-KA), specialty breeds, photos.
+            Anxious pet parents see real humans handling their dog.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-paws.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Breed-specific service pages
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Golden retriever, poodle, doodle, husky, double-coat breeds, hand-stripping, breed-standard grooming — each
+            gets its own page targeting breed-specific search intent.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-picture.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Facility tour photo gallery
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            Real photos of the grooming area, daycare play space, boarding kennels, outdoor yard. Anxious overnight-stay
+            parents see the actual environment, not stock images.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-syringe.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Vaccination requirements visible upfront
+          </h3>
+          <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+            DHPP, rabies, bordetella, canine influenza — requirements displayed in the booking flow so pet parents
+            arrive vaccinated and ready, not turned away.
+          </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-subscription.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Recurring grooming plan signup
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              Monthly grooming, every-6-week plans for poodles, every-4-week for doodles — recurring discounts and
+              priority booking for plan members.
+            </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-van.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Mobile grooming distinction with service area
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              For mobile groomers: visible service area map, in-home pricing, what's included in mobile rates, parking
+              and water access requirements.
+            </p>
+        </div>
+        <!-- Card  -->
+        <div
+          class="petgrooming-magnet-item bg-[#FFF7E9] border border-[#E0C8BE] rounded-2xl md:rounded-3xl lg:rounded-4xl p-5 lg:p-8 flex flex-col items-center text-center ">
+          <div class="petgrooming-magnet-item-svg w-15 h-15 md:w-20 md:h-20 mb-4 md:mb-6">
+            <img src="assets/images/petgrooming-feature-dog.svg" alt="Feature icon"
+              class="w-full h-full object-contain">
+          </div>
+          <h3 class="font-sekuya text-[#650B14] text-base md:text-lg leading-[130%] mb-4">
+            Special-needs and senior dog policies
+            <p class="font-nunito text-[#6E484C] text-sm md:text-base lg:text-lg leading-[130%]">
+              Reactive dog policies, senior dog accommodations, anxiety-friendly grooming, low-stress handling
+              certifications. Wins the segment most groomers won't take.
+            </p>
+        </div>
+
+      </div>
+
+
+      <!-- button -->
+      <div class="flex justify-center mt-6 md:mt-12">
+        <a href="#"
+          class="inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+          Book A Free 15-Min Call
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- 09 Featured section -->
+
+
+  <!-- Built for pet care businesses Section -->
+  <section
+    class="relative min-h-120 lg:min-h-screen flex items-center justify-center section-padding bg-cover bg-center bg-fixed"
+    style="background-image: url('assets/images/petgrooming-static-banner.png');">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-[#650B14]/10 pointer-events-none"></div>
+
+    <!-- Cards Container -->
+    <div class="relative container z-10 ">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-2 items-stretch">
+
+        <!-- Card 1 -->
+        <div class="bg-[#650B14] text-[#FFC556]
+    rounded-2xl md:rounded-3xl lg:rounded-4xl
+    p-4 sm:p-5 md:p-8 lg:p-12
+    flex flex-col justify-between
+    min-h-55 sm:min-h-80 md:min-h-85 lg:min-h-125">
+
+          <!-- Icon (Always Left) -->
+          <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
+            <img src="assets/images/petgrooming-statistic-arrow.svg" alt="icon" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 flex flex-col justify-center py-3 sm:py-4 md:py-6 text-center md:text-left">
+            <p class="font-sekuya text-[#FFC258]
+      text-[30px] sm:text-[42px] md:text-[64px] lg:text-[96px]
+      leading-none mb-5 md:mb-2">
+              21+
+            </p>
+
+            <p class="font-sekuya text-[#FFC258]
+      text-xs sm:text-sm md:text-base
+      leading-tight">
+              New Clients Per Month
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="font-nunito text-[#FFC258]
+    text-xs sm:text-sm md:text-lg
+    leading-relaxed
+    text-center md:text-left">
+            Pet care businesses gain more clients after website optimization.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#FFC258] text-[#650B14]
+    rounded-2xl md:rounded-3xl lg:rounded-4xl
+    p-4 sm:p-5 md:p-8 lg:p-12
+    flex flex-col justify-between
+    min-h-55 sm:min-h-80 md:min-h-85 lg:min-h-125">
+
+          <!-- Icon (Always Left) -->
+          <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
+            <img src="assets/images/petgrooming-statistic-beacon.svg" alt="icon" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 flex flex-col justify-center py-3 sm:py-4 md:py-6 text-center md:text-left">
+            <p class="font-sekuya text-[#650B14]
+      text-[30px] sm:text-[42px] md:text-[64px] lg:text-[96px]
+      leading-none mb-5 md:mb-2">
+              44%
+            </p>
+
+            <p class="font-sekuya text-[#650B14]
+      text-xs sm:text-sm md:text-base
+      leading-tight">
+              Grooming Plan Conversion
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="font-nunito text-[#650B14]
+    text-xs sm:text-sm md:text-lg
+    leading-relaxed
+    text-center md:text-left">
+            First-time customers often become recurring grooming clients with clear pricing.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#FFFCF8] text-[#650B14]
+    rounded-2xl md:rounded-3xl lg:rounded-4xl
+    p-4 sm:p-5 md:p-8 lg:p-12
+    flex flex-col justify-between
+    min-h-55 sm:min-h-80 md:min-h-85 lg:min-h-125">
+
+          <!-- Icon (Always Left) -->
+          <div class="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
+            <img src="assets/images/petgrooming-statistic-bolt.svg" alt="icon" class="w-full h-full object-contain">
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1 flex flex-col justify-center py-3 sm:py-4 md:py-6 text-center md:text-left">
+            <p class="font-sekuya text-[#650B14]
+      text-[30px] sm:text-[42px] md:text-[64px] lg:text-[96px]
+      leading-none mb-5 md:mb-2">
+              3×
+            </p>
+
+            <p class="font-sekuya text-[#650B14]
+      text-xs sm:text-sm md:text-base
+      leading-tight">
+              Faster Booking Response
+            </p>
+          </div>
+
+          <!-- Description -->
+          <p class="font-nunito text-[#650B14]
+    text-xs sm:text-sm md:text-lg
+    leading-relaxed
+    text-center md:text-left">
+            Booking response speed improves 3× compared to websites without UX or SEO optimization.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Built for pet care businesses Section -->
+
+  <!-- 8 specializations, one playbook Section -->
+  <section class="bg-[#FFFDF9] text-[#650B14] section-padding">
+    <div class="container">
+      <div class="flex flex-col items-center">
+
+        <!-- section heading -->
+        <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+          <!-- Top Pill Badge -->
+          <div class="mb-4 md:mb-6">
+            <span
+              class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+              8 specializations, one playbook
+            </span>
+          </div>
+
+          <!-- Main Title Header -->
+          <h2
+            class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+            Website design built around your specific pet care businesses niche
+          </h2>
+
+          <!-- Subtitle Description -->
+          <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+            A dog grooming salon and an overnight boarding facility serve entirely different services to entirely
+            different pet parents in entirely different decision states. We design for the niche.
+          </p>
+        </div>
+
+        <!--  -->
+        <div class="w-full max-w-312 mx-auto">
+          <div class="w-full flex flex-col space-y-0.5 ">
+
+            <!-- Item  -->
+            <div
+              class="w-full bg-[#FFE1AD] text-[#650B14] rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  1
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Dog Grooming Salon
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Breed-specific pricing, groomer profiles with certs, before-and-after gallery, recurring grooming plans,
+                hand-stripping and specialty grooming.
+              </p>
+
+            </div>
+
+
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  2
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Dog daycare facility
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Vaccination requirements visible, play group structure, facility photos, half-day vs full-day pricing,
+                pickup window flexibility.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  3
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Boarding facility
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Overnight kennel photos, climate-controlled spaces, holiday pricing, owner update photos, multi-pet
+                discounts.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  4
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Dog trainer
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Certifications (CPDT-KA, KPA, IAABC, AKC CGC evaluator), service tiers (private, group,
+                board-and-train), behavior-vs-obedience split, force-free methods.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  5
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Dog walker / pet sitter
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Service area map, visit length options (20/30/60 min), insurance and bonding info, sitter profiles with
+                photos.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  6
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Mobile grooming
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Service area map, in-home pricing transparency, what's in the mobile unit, parking and water access
+                requirements.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  7
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Cat grooming / care
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Cat-only or cat-aware grooming, sedation-free positioning, mobile cat grooming, vet-tech-certified
+                groomers.
+              </p>
+
+            </div>
+            <!-- Item  -->
+            <div
+              class="w-full text-[#650B14] border-b border-[#650B14]  p-3 md:p-5 lg:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 md:gap-6 transition-all duration-200">
+
+              <!-- Left Column -->
+              <div class="flex items-center space-x-6 md:space-x-8 w-full sm:w-auto sm:min-w-[320px]">
+                <span
+                  class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+                  8
+                </span>
+
+                <div class="h-8 w-px bg-[#650B14] hidden sm:block"></div>
+
+                <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                  Exotic & small pet care
+                </h3>
+              </div>
+
+              <!-- Right Column -->
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-126.25">
+                Birds, reptiles, rabbits, ferrets — species expertise, specialized boarding setups, veterinary
+                partnership for emergencies.
+              </p>
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="flex justify-center mt-6 md:mt-12">
+          <a href="#"
+            class="inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+            Book A Free 15-Min Call
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- 8 specializations, one playbook Section -->
+
+
+  <!-- Serving pet care businesses nationwide section  -->
+  <section class="bg-[#FFF7E9] text-[#650B14] section-padding relative ">
+    <div class="container">
+      <div class=" grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+
+        <!-- Image Assets (Dog + Typography Stamp Badge) -->
+        <div class="lg:col-span-6 flex items-center justify-center relative ">
+
+          <!-- Dog + Circle Wrapper -->
+          <div class="relative w-full mt-auto pointer-events-none">
+
+            <!-- Dog Image -->
+            <img src="assets/images/petgrooming-serving-pet-nationwide.png" alt="Featured Dog Presentation Graphic"
+              class="w-[55%] lg:w-full h-auto lg:h-full object-contain mx-auto">
+
+
+            <!-- Animated Circle Badge -->
+            <div class="absolute left-10 top-0 md:left-32 md:top-12 lg:top-28 lg:left-18 
+    w-28 h-28 sm:w-32 sm:h-32 lg:w-55.5 lg:h-55.5 
+    z-10 flex items-center justify-center">
+
+              <!-- Rotating Circle Text -->
+              <div class="absolute inset-0 animate-spin-slow">
+                <img src="assets/images/petgrooming-circle-text.png" alt="Circle Text"
+                  class="w-full h-full object-contain">
+              </div>
+
+
+              <!-- Center Logo -->
+              <div class="relative z-10 flex items-center justify-center">
+                <img src="assets/images/petgrooming-scissor.png" alt="Logo"
+                  class="w-[65%] sm:w-[70%] lg:w-full object-contain">
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- Headers, Inline City Badges, & Strategic Content -->
+        <div class="lg:col-span-6 flex flex-col  ">
+
+          <!-- section heading -->
+          <div class="pet-section-heading max-w-184 flex flex-col items-start mb-4 sm:mb-6 md:mb-8">
+            <!-- Top Pill Badge -->
+            <div class="mb-4 md:mb-6">
+              <span
+                class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+                Serving pet care businesses nationwide
+              </span>
+            </div>
+
+            <!-- Main Title Header -->
+            <h2
+              class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+              Pet care businesses website design built in your city
+            </h2>
+
+            <!-- Subtitle Description -->
+            <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+              Pet care is hyperlocal. Owners rarely travel more than 15 minutes for grooming or daycare, and they
+              shortlist by reviews and visible love-for-animals before they look at price.
+            </p>
+          </div>
+
+          <!-- Wrapped Organic City Pill Group -->
+          <div class="flex flex-wrap gap-1.5">
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">New
+              York City
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Los
+              Angeles
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Chicago
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Houston
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Phoenix
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Philadelphia
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">San
+              Antonio
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Dallas
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Austin
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Miami
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Atlanta
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Boston
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Seattle
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Denver
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">San
+              Francisco
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Las
+              Vegas
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Nashville
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Charlotte
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Portland
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Scottsdale
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">Toronto
+            </span>
+            <span
+              class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">London
+            </span>
+          </div>
+
+          <!-- Secondary SEO Context Footnote Statement -->
+          <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 sm:mt-6 md:mt-8">
+            Don't see your city? We work with pet care businesses across the US, Canada, and UK. Local SEO strategy
+            adjusts per market — dense metros need neighborhood-level pages, suburban markets lean toward facility-tour
+            content.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Serving pet care businesses nationwide section  -->
+
+  <!-- Workflow timeline section -->
+  <section class="bg-white text-[#650B14] section-padding relative">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 items-start">
+
+        <!-- left content -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col justify-between lg:sticky lg:top-20">
+          <div class="flex flex-col items-start text-center lg:text-left">
+
+            <!-- section heading -->
+            <div class="pet-section-heading max-w-151.25 mx-auto  flex flex-col  mb-6 sm:mb-8 md:mb-12">
+
+              <!-- Main Title Header -->
+              <h2
+                class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+                From discovery call to launched site in 14 days
+              </h2>
+
+              <!-- Subtitle Description -->
+              <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+                Most pet care businesses marketing agencies take 60–90 days for the same scope. We don't, because the
+                package is productized — same caliber of work, less margin per project, faster turnaround.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right content -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col w-full space-y-2">
+
+          <!-- Step 1 -->
+          <div
+            class="w-full bg-[#FFC258] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              1
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Discovery
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                90-min kickoff. Service menu audit. Tool stack review. Competitor
+                analysis of three pet care businesses outranking you.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              2
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Brand + design
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Logo, palette, typography. Wireframes and comps. One round of revision built in.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              3
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Build + SEO
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Mobile-first build. SEO content per service. Schema. CRM and platform integration.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              4
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Launch + GBP
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                DNS, Search Console verification, GBP rebuild, CMS training, handoff.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Workflow timeline section -->
+
+
+  <!--  Case Studies Showcase Section -->
+  <section id="petgrooming-works" class="bg-[#FFF8EA] text-[#650B14] section-padding relative overflow-hidden">
+    <div class="container">
+
+      <!-- section heading -->
+      <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+        <!-- Top Pill Badge -->
+        <div class="mb-4 md:mb-6">
+          <span
+            class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+            Recent pet care businesses projects
+          </span>
+        </div>
+
+        <!-- Main Title Header -->
+        <h2
+          class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+          Real pet care businesses websites we've built
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+          Click any case study for the redesign rationale, the SEO keyword targets, and the inquiry volume after launch.
+        </p>
+      </div>
+
+      <!-- Projects showcase grid -->
+      <div id="petgrooming-works-grid" class="flex flex-col gap-3 sm:gap-4 md:gap-6">
+
+        <!-- Case study -->
+        <a href="case-study-details.html"
+          class="petgrooming-work-card group block bg-white rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl p-2 md:p-3">
+
+          <div class="grid lg:grid-cols-12 items-stretch">
+
+            <!-- Image -->
+            <div class="lg:col-span-6 h-full">
+
+              <div
+                class="petgrooming-work-media relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl cursor-none bg-[#FFF8EA] h-65 sm:h-auto sm:aspect-video lg:aspect-auto lg:h-full">
+
+                <img src="assets/images/petgrooming-project-01.webp" alt="Bow & Brush Grooming"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-800 ease-out group-hover:scale-[1.06]">
+
+                <span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
+                </span>
+
+                <span
+                  class="petgrooming-view-work absolute left-0 top-0 z-10 flex h-27.5 w-27.5 md:h-35 md:w-35 lg:h-40 lg:w-40 items-center justify-center rounded-full bg-[#D8443F] text-white font-sekuya text-sm pointer-events-none will-change-transform">
+                  View Work
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="lg:col-span-6 flex flex-col items-start p-2 sm:p-3 md:p-6 lg:p-12">
+
+              <span
+                class="bg-[#FFC258] text-[#650B14] font-roboto text-sm sm:text-base md:text-lg font-bold leading-[110%] md:leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full mb-3">
+                Grooming
+              </span>
+
+
+              <h3
+                class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] group-hover:text-[#D8443F] transition-colors duration-300">
+                Bow & Brush Grooming
+              </h3>
+
+
+              <p class="mt-3 font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                Recurring grooming plan signups increased from 6 to 47 per month.
+                Average client lifetime value rose above $1,800, showing the
+                website and SEO optimizations directly improved bookings and
+                revenue growth.
+              </p>
+
+
+              <!-- Project Metrics -->
+              <div class="grid grid-cols-3 gap-5 sm:gap-8 w-full pt-6 sm:pt-12">
+
+
+                <!-- Item 1 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-soap.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    6 → 47/mo
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Recurring grooming plan signups
+                  </p>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-stackdollar.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    $1,800+
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Avg lifetime value per client
+                  </p>
+
+                </div>
+
+
+                <!-- Item 3 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-calender.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    25+
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    New bookings per month
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+        <!-- Case study -->
+        <a href="case-study-details.html"
+          class="petgrooming-work-card group block bg-white rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl p-2 md:p-3">
+
+          <div class="grid lg:grid-cols-12 items-stretch">
+
+            <!-- Content -->
+            <div class="order-2 lg:order-1 lg:col-span-6 flex flex-col items-start p-2 sm:p-3 md:p-6 lg:p-12">
+
+              <span
+                class="bg-[#FFC258] text-[#650B14] font-roboto text-sm sm:text-base md:text-lg font-bold leading-[110%] md:leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full mb-3">
+                Daycare
+              </span>
+
+
+              <h3
+                class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] group-hover:text-[#D8443F] transition-colors duration-300">
+                Pawhouse Pet Resort
+              </h3>
+
+
+              <p class="mt-3 font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                Daycare bookings doubled, and boarding fills consistently 6 weeks ahead during holidays. Facility
+                photos, vaccination visibility, and clear service pages boosted customer trust and ensured higher
+                booking conversions nationwide.
+              </p>
+
+
+              <!-- Project Metrics -->
+              <div class="grid grid-cols-3 gap-5 sm:gap-8 w-full pt-6 sm:pt-12">
+
+
+                <!-- Item 1 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-network.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    2× Bookings
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Daycare bookings doubled.
+                  </p>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-calender.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    6 Weeks Ahead
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Boarding fills early.
+                  </p>
+
+                </div>
+
+
+                <!-- Item 3 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-stackdollar.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    $800K
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Max annual revenue potential.
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!-- Image -->
+            <div class="order-1 lg:order-2 lg:col-span-6 h-full">
+
+              <div
+                class="petgrooming-work-media relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl cursor-none bg-[#FFF8EA] h-65 sm:h-auto sm:aspect-video lg:aspect-auto lg:h-full">
+
+                <img src="assets/images/petgrooming-project-02.webp" alt="Bow & Brush Grooming"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-800 ease-out group-hover:scale-[1.06]">
+
+                <span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
+                </span>
+
+                <span
+                  class="petgrooming-view-work absolute left-0 top-0 z-10 flex h-27.5 w-27.5 md:h-35 md:w-35 lg:h-40 lg:w-40 items-center justify-center rounded-full bg-[#D8443F] text-white font-sekuya text-sm pointer-events-none will-change-transform">
+                  View Work
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+        <!-- Case study -->
+        <a href="case-study-details.html"
+          class="petgrooming-work-card group block bg-white rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl p-2 md:p-3">
+
+          <div class="grid lg:grid-cols-12 items-stretch">
+
+            <!-- Image -->
+            <div class="lg:col-span-6 h-full">
+
+              <div
+                class="petgrooming-work-media relative overflow-hidden rounded-xl sm:rounded-2xl md:rounded-3xl lg:rounded-4xl cursor-none bg-[#FFF8EA] h-65 sm:h-auto sm:aspect-video lg:aspect-auto lg:h-full">
+
+                <img src="assets/images/petgrooming-project-03.webp" alt="Bow & Brush Grooming"
+                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-800 ease-out group-hover:scale-[1.06]">
+
+                <span class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500">
+                </span>
+
+                <span
+                  class="petgrooming-view-work absolute left-0 top-0 z-10 flex h-27.5 w-27.5 md:h-35 md:w-35 lg:h-40 lg:w-40 items-center justify-center rounded-full bg-[#D8443F] text-white font-sekuya text-sm pointer-events-none will-change-transform">
+                  View Work
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="lg:col-span-6 flex flex-col items-start p-2 sm:p-3 md:p-6 lg:p-12">
+
+              <span
+                class="bg-[#FFC258] text-[#650B14] font-roboto text-sm sm:text-base md:text-lg font-bold leading-[110%] md:leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full mb-3">
+                Trainer
+              </span>
+
+
+              <h3
+                class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] group-hover:text-[#D8443F] transition-colors duration-300">
+                Anchor Dog Training
+              </h3>
+
+
+              <p class="mt-3 font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%]">
+                Private sessions grew from 8 to 32 per month. Board-and-train program enrollments increased, and 42% of
+                first-time clients converted to recurring sessions due to clear service offerings and optimized
+                scheduling online.
+              </p>
+
+
+              <!-- Project Metrics -->
+              <div class="grid grid-cols-3 gap-5 sm:gap-8 w-full pt-6 sm:pt-12">
+
+
+                <!-- Item 1 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-network.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    8 → 32/mo
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Private sessions growth.
+                  </p>
+
+                </div>
+
+
+                <!-- Item 2 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-dog.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    Board-and-Train
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    Signups increased.
+                  </p>
+
+                </div>
+
+
+                <!-- Item 3 -->
+                <div class="petgrooming-magnet-item">
+
+                  <div class="petgrooming-magnet-item-svg w-8 h-8 sm:w-10 sm:h-10 mb-2 sm:mb-3">
+                    <img src="assets/images/petgrooming-project-comment.svg" alt="icon"
+                      class="w-full h-full object-contain">
+                  </div>
+
+                  <p class="font-sekuya text-sm sm:text-base md:text-lg leading-[130%]">
+                    42%
+                  </p>
+
+                  <p class="font-nunito text-xs sm:text-sm md:text-base text-[#6E484C] leading-[130%] mt-1.5 sm:mt-3">
+                    First-time clients converted to recurring.
+                  </p>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+  <!--  Case Studies Showcase Section -->
+
+
+  <!-- Platform & Integrations Comparison Section -->
+  <section class="bg-white section-padding overflow-hidden">
+    <div class="container">
+
+      <!-- section heading -->
+      <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+        <!-- Top Pill Badge -->
+        <div class="mb-4 md:mb-6">
+          <span
+            class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+            Platform + integrations
+          </span>
+        </div>
+
+        <!-- Main Title Header -->
+        <h2
+          class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+          The right platform for your pet care businesses business
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+          We default to WordPress for SEO control and Webflow for visual-heavy brands. Pet care software (PetExec,
+          Gingr, ProPet, Time to Pet) integrates into either via API.
+        </p>
+      </div>
+
+      <!-- Comparison Table Container -->
+      <div class="w-full overflow-x-auto pb-6 lg:pb-0 scrollbar-thin scrollbar-thumb-[#650B14]">
+        <div class="min-w-max flex flex-col">
+
+          <!-- Grid Headers -->
+          <div class="grid grid-cols-4 gap-1 items-stretch mb-2 md:mb-4">
+
+            <!-- Features -->
+            <div
+              class="bg-[#650B14] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center ">
+              <span
+                class="font-sekuya text-white text-[12px] sm:text-xs md:text-base lg:text-lg leading-[130%] whitespace-nowrap">
+                Features
+              </span>
+            </div>
+
+            <!-- WordPress -->
+            <div
+              class="bg-[#FFB54A] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center  gap-1 sm:gap-2">
+              <img src="assets/images/petgrooming-wordpress.svg" alt="WordPress"
+                class="w-3.5 h-3.5 sm:w-5 sm:h-5 md:w-7 md:h-7 shrink-0">
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                WordPress
+              </span>
+            </div>
+
+            <!-- Webflow -->
+            <div
+              class="bg-[#FFE1AD] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center  gap-1 sm:gap-2">
+              <img src="assets/images/petgrooming-webflow.svg" alt="Webflow"
+                class="w-3.5 h-3.5 sm:w-5 sm:h-5 md:w-7 md:h-7 shrink-0">
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                Webflow
+              </span>
+            </div>
+
+            <!-- Squarespace -->
+            <div
+              class="bg-[#FFF7E9] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center  gap-1 sm:gap-2">
+              <img src="assets/images/petgrooming-squarespace.svg" alt="Squarespace"
+                class="w-3.5 h-3.5 sm:w-5 sm:h-5 md:w-7 md:h-7 shrink-0">
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                Squarespace
+              </span>
+            </div>
+
+          </div>
+
+          <!-- ROW 1: BEST FOR -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-white hover:bg-[#FFF7E9] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Best for</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Multi-location, SEO-heavy</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Premium positioning</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              DIY pre-package</div>
+          </div>
+
+          <!-- ROW 2: SEO CONTROL -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-white hover:bg-[#FFF7E9] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              SEO control</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Full</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Strong</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Limited</div>
+          </div>
+
+          <!-- ROW 3: CUSTOMIZATION -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-white hover:bg-[#FFF7E9] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Customization</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Unlimited</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              High</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Template-bound</div>
+          </div>
+
+          <!-- ROW 4: MONTHLY COST -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-white hover:bg-[#FFF7E9] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Monthly cost</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              $15–35</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              $23–39</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              $23–49</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom Integrations List Section -->
+      <div class="mt-6 md:mt-12 flex flex-col items-center">
+        <!-- Subsection Small Header -->
+        <h3 class="font-sekuya text-[#650B14] text-base md:text-lg text-center mb-4 md:mb-6">
+          Integrations Built Into Every Package
+        </h3>
+
+        <!-- Fluid Wrap Badges Grid -->
+        <div class="max-w-248 flex flex-wrap justify-center gap-1.5">
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            PetExec
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Gingr
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            ProPet
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            123Pet
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Time to Pet
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Easy Busy Pets
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Square Appointments
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Stripe
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Google Business Profile
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Yelp
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Nextdoor
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Rover (sitters)
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Wag
+          </span>
+          <span
+            class="bg-[#FFE1AD] text-[#650B14] font-nunito text-sm sm:text-base md:text-lg font-bold leading-[130%] px-2 py-1 md:px-4 md:py-2 rounded-xl md:rounded-full">
+            Instagram feed
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Platform & Integrations Comparison Section -->
+
+
+  <!-- Honest comparison Section -->
+  <section class="bg-[#FFF7E9] section-padding overflow-hidden">
+    <div class="container">
+
+      <!-- section heading -->
+      <div class="pet-section-heading max-w-248 mx-auto text-center flex flex-col items-center mb-6 sm:mb-8 md:mb-12">
+        <!-- Top Pill Badge -->
+        <div class="mb-4 md:mb-6">
+          <span
+            class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+            Honest comparison
+          </span>
+        </div>
+
+        <!-- Main Title Header -->
+        <h2
+          class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+          Pixxen vs Rover / Wag platform vs full-service pet marketing agency
+        </h2>
+
+        <!-- Subtitle Description -->
+        <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+          Three honest paths. Each fits a different pet care businesses business. Here's the math, no spin.
+        </p>
+      </div>
+
+      <!-- Comparison Table Container -->
+      <div class="w-full overflow-x-auto overflow-y-hidden pb-6 lg:pb-0 scrollbar-thin scrollbar-thumb-[#650B14]">
+        <div class="min-w-max flex flex-col">
+
+          <!-- Grid Headers -->
+          <div class="grid grid-cols-4 gap-1 items-stretch mb-2 md:mb-4">
+
+            <!-- Name -->
+            <div
+              class="bg-[#FFE1AD] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center ">
+              <span
+                class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg leading-[130%] whitespace-nowrap">
+                Name
+              </span>
+            </div>
+
+            <!-- Pixxen $999 -->
+            <div
+              class="bg-[#FFB54A] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center  gap-1 sm:gap-2">
+              <img src="assets/images/petgrooming-pixxen.svg" alt="pixxen"
+                class="w-3.5 h-3.5 sm:w-5 sm:h-5 md:w-7 md:h-7 shrink-0">
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                Pixxen $999
+              </span>
+            </div>
+
+            <!-- Rover / Wag listing -->
+            <div
+              class="bg-[#FFE1AD] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center">
+
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                Rover / Wag listing
+              </span>
+            </div>
+
+            <!-- Full-service agency -->
+            <div
+              class="bg-[#FFE1AD] rounded-lg sm:rounded-xl md:rounded-3xl lg:rounded-4xl p-2 sm:p-3 md:p-6 flex items-center">
+
+              <span class="font-sekuya text-[#650B14] text-[12px] sm:text-xs md:text-base lg:text-lg whitespace-nowrap">
+                Full-service agency
+              </span>
+            </div>
+
+          </div>
+
+          <!-- ROW 1: Total first-year cost -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-[#FFF7E9] hover:bg-[#ffffff] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Total first-year cost</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              $999 one-time</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              20% platform commission</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              $8K–18K + retainer</div>
+          </div>
+
+          <!-- ROW 2: Brand ownership -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-[#FFF7E9] hover:bg-[#ffffff] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Brand ownership</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Yours</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Platform's</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Yours</div>
+          </div>
+
+          <!-- ROW 3: Recurring relationships -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-[#FFF7E9] hover:bg-[#ffffff] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Recurring relationships</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Direct with customer</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Through platform</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Direct</div>
+          </div>
+
+          <!-- ROW 4: Pricing control -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-[#FFF7E9] hover:bg-[#ffffff] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Pricing control</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Yours</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Platform-controlled</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Yours</div>
+          </div>
+          <!-- ROW 5: Ownership -->
+          <div
+            class="grid grid-cols-4 gap-1 items-center bg-[#FFF7E9] hover:bg-[#ffffff] transition-all duration-400 cursor-pointer">
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Ownership</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              You own everything</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Listings only</div>
+            <div
+              class="p-2 md:p-4 lg:p-6 border-b border-[#650B14] font-nunito text-[#650B14] text-sm sm:text-base md:text-lg font-bold leading-[130%] h-full flex items-center">
+              Often agency-locked</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Bottom Integrations List Section -->
+      <div class="mt-6 md:mt-12 flex flex-col max-w-248 mx-auto items-center">
+        <!-- Subsection Small Header -->
+        <p class="text-[#6C5154] font-roboto text-sm sm:text-base md:text-lg leading-[130%]">
+          Independent pet care business doing $80K–$800K annual revenue, wanting a real branded site that escapes
+          platform commissions? Pixxen. Brand-new sitter or walker building reputation? Use Rover or Wag for 6–12 months
+          to build reviews, then come to us. Multi-location facility with $4K+/month marketing budget? You need
+          full-service agency, not us.
+        </p>
+
+        <!-- Button -->
+        <div class="flex justify-center mt-6 md:mt-12">
+          <a href="#"
+            class="inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+            Book A Free 15-Min Call
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Honest comparison Section -->
+
+  <!-- What to Expect section -->
+  <section class="bg-white text-[#650B14] section-padding relative">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 items-start">
+
+        <!-- left content -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col justify-between lg:sticky lg:top-20">
+          <div class="flex flex-col items-start text-center lg:text-left">
+
+            <!-- section heading -->
+            <div class="pet-section-heading max-w-184 mx-auto flex flex-col  mb-6 sm:mb-8 md:mb-12">
+
+              <!-- Main Title Header -->
+              <h2
+                class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+                What to actually expect from your pet care businesses SEO
+              </h2>
+
+              <!-- Subtitle Description -->
+              <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%]">
+                Honest up-front beats a sales pitch every time. Here's the realistic timeline for organic growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- right content -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col w-full space-y-2">
+
+          <!-- Step 1 -->
+          <div
+            class="w-full bg-[#FFC258] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              1
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Launch
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Site live, GBP optimized. Direct traffic and referrals convert better immediately.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              2
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                First impressions
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Google indexes pages. GBP starts surfacing for 'near me' searches. First 3–10 organic leads.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              3
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                First real lift
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Long-tail and niche-specific queries rank. Local 3-pack for less competitive searches.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Step 4 -->
+          <div
+            class="w-full bg-[#FFF7E9] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-5 md:p-6 lg:p-8 flex items-start space-x-6 md:space-x-8 hover:bg-[#FFC258] transition-all duration-400 cursor-pointer">
+
+            <span
+              class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%] w-3 md:w-6 text-center">
+              4
+            </span>
+
+            <div class="w-px bg-[#650B14] self-stretch shrink-0"></div>
+
+            <div class="flex flex-col space-y-1">
+              <h3 class="font-sekuya text-[#650B14] text-sm sm:text-lg md:text-[24px] leading-[130%]">
+                Compounding
+              </h3>
+
+              <p class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] max-w-147.75">
+                Service pages stack up. Long-tail traffic compounds. Leads 2–4x baseline.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- What to Expect section -->
+
+  <!-- Marque section -->
+  <section class="py-6 sm:py-10 md:py-12 overflow-hidden">
+    <div class="w-[120%] -ml-[10%] md:w-full md:mx-auto -rotate-3 lg:-rotate-2">
+      <div id="petgrooming-text-marquee"
+        class="splide bg-[#650B14] py-2 sm:py-4 md:py-6 lg:py-8 px-4 md:px-8 lg:px-12 rounded-full flex items-center font-sekuya">
+        <div class="splide__track">
+          <ul
+            class="splide__list items-center text-white text-sm sm:text-base md:text-lg leading-[130%] whitespace-nowrap">
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>grooming</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>daycare</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>boarding</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>training</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>walking</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>sitting</span>
+            </li>
+
+            <li class="splide__slide flex items-center gap-2 sm:gap-4 px-4">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M15.1463 0.000454118C15.1463 0.000454118 15.4041 9.00013 19.1917 12.4127C22.9794 15.8252 31.9572 15.1462 31.9572 15.1462C31.9572 15.1462 22.9575 15.404 19.545 19.1917C16.1325 22.9794 16.8114 31.9571 16.8114 31.9571C16.8114 31.9571 16.5536 22.9574 12.7659 19.5449C8.97825 16.1324 0.000522445 16.8113 0.000522445 16.8113C0.000522445 16.8113 9.0002 16.5536 12.4127 12.7659C15.8252 8.97819 15.1463 0.000454118 15.1463 0.000454118Z"
+                    fill="#FFFCF8" />
+                </svg>
+              </span>
+              <span>mobile grooming</span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Marque section -->
+
+
+  <!-- What we wont promise -->
+  <section class="bg-white text-[#650B14] section-padding relative ">
+    <div class="container">
+      <div class=" grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+
+        <!-- Image Assets (Dog + Typography Stamp Badge) -->
+        <div class="lg:col-span-6 flex items-center justify-center relative ">
+
+          <!-- Dog + Circle Wrapper -->
+          <div class="relative w-full mt-auto pointer-events-none">
+
+            <!-- Dog Image -->
+            <img src="assets/images/petgrooming-promisebnr.png" alt="Featured Dog Presentation Graphic"
+              class="w-[55%] lg:w-full h-auto lg:h-full object-contain mx-auto">
+
+
+            <!-- Animated Circle Badge -->
+            <div class="absolute left-10 top-0 md:left-32 md:top-12 lg:top-32 lg:left-0
+    w-28 h-28 sm:w-32 sm:h-32 lg:w-55.5 lg:h-55.5
+    z-10 flex items-center justify-center">
+
+
+              <!-- Rotating Circle Text -->
+              <div class="absolute inset-0 animate-spin-slow">
+                <img src="assets/images/petgrooming-circle-text.png" alt="Circle Text"
+                  class="w-full h-full object-contain">
+              </div>
+
+
+              <!-- Center Logo -->
+              <div class="relative z-10 flex items-center justify-center">
+                <img src="assets/images/petgrooming-scissor.png" alt="Logo"
+                  class="w-[65%] sm:w-[70%] lg:w-full object-contain">
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- RIGHT COLUMN: Headers, Realist Disclaimers, & Call to Action -->
+        <div class="lg:col-span-6 flex flex-col justify-center text-left">
+
+          <!-- Main Title Header -->
+          <h2
+            class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+            What We Won't Promise
+          </h2>
+
+          <!-- Realistic Checklist Group Stack -->
+          <div class="flex flex-col space-y-3 sm:space-y-4 md:space-y-6 ">
+
+            <!-- Item Node 1 -->
+            <div class="flex items-start space-x-2 md:space-x-3">
+              <img src="assets/images/petgrooming-checkmark02.svg" alt="check"
+                class="w-3.75 h-3.75 md:w-5.25 md:h-5.25 object-contain">
+              <p class="font-roboto text-[#6C5154] text-sm sm:text-base md:text-lg leading-[130%]">
+                Page-1 rankings on day one for 'dog groomer [major metro].' Broad pet care keywords have been fought
+                over for 10+ years by chains (PetSmart Grooming, Petco) and Rover. We reliably rank you for
+                breed-plus-neighborhood combinations within 60–120 days.
+              </p>
+            </div>
+            <!-- Item Node 2 -->
+            <div class="flex items-start space-x-2 md:space-x-3">
+              <img src="assets/images/petgrooming-checkmark02.svg" alt="check"
+                class="w-3.75 h-3.75 md:w-5.25 md:h-5.25 object-contain">
+              <p class="font-roboto text-[#6C5154] text-sm sm:text-base md:text-lg leading-[130%]">
+                Booking volume independent of pet ownership cycles. Pet care has seasonality — holidays for boarding,
+                summer for grooming, post-adoption surges. The site does its job; the calendar does its.
+              </p>
+            </div>
+            <!-- Item Node 3 -->
+            <div class="flex items-start space-x-2 md:space-x-3">
+              <img src="assets/images/petgrooming-checkmark02.svg" alt="check"
+                class="w-3.75 h-3.75 md:w-5.25 md:h-5.25 object-contain">
+              <p class="font-roboto text-[#6C5154] text-sm sm:text-base md:text-lg leading-[130%]">
+                Outranking Rover or Wag in directory results. Massive domain authority on both. We win the local 3-pack
+                and breed-specific queries they don't optimize per business.
+              </p>
+            </div>
+            <!-- Item Node 4 -->
+            <div class="flex items-start space-x-2 md:space-x-3">
+              <img src="assets/images/petgrooming-checkmark02.svg" alt="check"
+                class="w-3.75 h-3.75 md:w-5.25 md:h-5.25 object-contain">
+              <p class="font-roboto text-[#6C5154] text-sm sm:text-base md:text-lg leading-[130%]">
+                Trust without consistent service delivery. The site brings the first booking. Your team has to handle
+                the dog well enough that the owner rebooks.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- CTA Action Button Callout -->
+          <div class="flex  mt-6 md:mt-12">
+            <a href="#"
+              class="inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+              Book A Free 15-Min Call
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- What we wont promise -->
+
+
+  <!-- Testimonial  Section -->
+  <section
+    class="relative min-h-120 lg:min-h-screen flex items-center justify-center section-padding bg-cover bg-center bg-fixed"
+    style="background-image: url('assets/images/petgrooming-testimonial-banner.png');">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-[#650B14]/10 pointer-events-none"></div>
+
+    <div class="relative container z-10">
+
+      <div id="petgrooming-testimonial-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+
+            <!-- Slide 1 -->
+            <li class="splide__slide">
+              <div
+                class="bg-[#650B14] text-[#FFC258] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-6 lg:p-8 flex flex-col justify-between min-h-75 sm:min-h-85 lg:min-h-124">
+
+                <!-- Stars -->
+                <ul class="flex space-x-1 mb-4 md:mb-8">
+                  <li><img src="assets/images/petgrooming-rating-star.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                </ul>
+
+                <div class="flex-1 mb-8">
+                  <p class="font-roboto italic text-sm sm:text-base md:text-lg leading-[130%]">
+                    We were stuck on a Vagaro free site that ranked for nothing. Pixxen built us a real branded site for
+                    $999, integrated PetExec, and within four months our recurring grooming plans went from 6 to 47. The
+                    breed-specific pricing pages capture exactly the search intent we were missing.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="font-sekuya text-sm md:text-base">
+                    Sarah Bow
+                  </p>
+                  <span class="font-nunito text-base md:text-lg">
+                    Owner, Bow & Brush Grooming
+                  </span>
+                </div>
+
+              </div>
+            </li>
+            <!-- Slide 2 -->
+            <li class="splide__slide">
+              <div
+                class="bg-[#FFC258] text-[#650B14] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-6 lg:p-8 flex flex-col justify-between min-h-75 sm:min-h-85 lg:min-h-124">
+
+                <!-- Stars -->
+                <ul class="flex space-x-1 mb-4 md:mb-8">
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                </ul>
+
+                <div class="flex-1 mb-8">
+                  <p class="font-roboto italic text-sm sm:text-base md:text-lg leading-[130%]">
+                    We were stuck on a Vagaro free site that ranked for nothing. Pixxen built us a real branded site for
+                    $999, integrated PetExec, and within four months our recurring grooming plans went from 6 to 47. The
+                    breed-specific pricing pages capture exactly the search intent we were missing.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="font-sekuya text-sm md:text-base">
+                    Sarah Bow
+                  </p>
+                  <span class="font-nunito text-base md:text-lg">
+                    Owner, Bow & Brush Grooming
+                  </span>
+                </div>
+
+              </div>
+            </li>
+            <!-- Slide 3 -->
+            <li class="splide__slide">
+              <div
+                class="bg-[#FFFCF8] text-[#650B14] rounded-2xl md:rounded-3xl lg:rounded-4xl p-4 sm:p-6 lg:p-8 flex flex-col justify-between min-h-75 sm:min-h-85 lg:min-h-124">
+
+                <!-- Stars -->
+                <ul class="flex space-x-1 mb-4 md:mb-8">
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                  <li><img src="assets/images/petgrooming-rating-star2.svg" class="w-5 h-5 md:w-8 md:h-8" alt=""></li>
+                </ul>
+
+                <div class="flex-1 mb-8">
+                  <p class="font-roboto italic text-sm sm:text-base md:text-lg leading-[130%]">
+                    We were stuck on a Vagaro free site that ranked for nothing. Pixxen built us a real branded site for
+                    $999, integrated PetExec, and within four months our recurring grooming plans went from 6 to 47. The
+                    breed-specific pricing pages capture exactly the search intent we were missing.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="font-sekuya text-sm md:text-base">
+                    Sarah Bow
+                  </p>
+                  <span class="font-nunito text-base md:text-lg">
+                    Owner, Bow & Brush Grooming
+                  </span>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- Testimonial  Section -->
+
+
+  <!-- FAQ Section -->
+  <section class="bg-white section-padding">
+    <div class="container">
+      <div class="grid grid-cols-1 lg:grid-cols-12 items-start">
+        <!-- left content (UNCHANGED) -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col justify-between lg:sticky lg:top-20">
+          <div class="flex flex-col items-start text-center lg:text-left">
+
+            <!-- section heading -->
+            <div class="pet-section-heading max-w-184 mx-auto flex flex-col  mb-6 sm:mb-8 md:mb-12">
+
+              <!-- Pill badge -->
+              <div class="mb-4 md:mb-6">
+                <span
+                  class="font-sekuya text-white bg-[#D8443F] text-[10px] md:text-[12px] leading-[110%] px-3 py-1.5 md:px-4 md:py-2 rounded-full">
+                  Common questions
+                </span>
+              </div>
+              <!-- Main Title Header -->
+              <h2
+                class="font-sekuya text-[#650B14] text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+                Frequently asked questions
+              </h2>
+
+              <!-- Subtitle Description -->
+              <p class="text-[#650B14] text-sm sm:text-base md:text-lg leading-[130%] max-w-175">
+                Three honest paths. Each fits a different pet care businesses business. Here's the math, no spin.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content (Fixed Paragraph Stack Alignment & Native Accordion Framework) -->
+        <div class="col-start-1 lg:col-span-6 flex flex-col">
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  Is the $999 price really all-in?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  Yes. Logo, branding, pet care website, SEO content, on-page SEO setup,
+                  GBP optimization, and 30 days of post-launch support.
+                  Pet care software subscriptions are your existing tools.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  Will my business rank #1 for 'dog groomer [my city]'?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  No one can guarantee a #1 ranking, but with the right local SEO strategy,
+                  strong Google Business Profile optimization, quality content, reviews,
+                  and consistent marketing, we can significantly improve your chances of
+                  ranking higher for “dog groomer [your city]” and attracting more local customers.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  Do you integrate with PetExec, Gingr, ProPet, Time to Pet?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  Yes, we can work alongside PetExec, Gingr, ProPet, and Time To Pet.
+                  We don’t replace your existing pet care software — we build your website,
+                  branding, SEO, and online presence around the tools you already use.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  How do you handle vaccination requirements in the booking flow?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  Vaccination requirements can be handled through your existing pet care
+                  software and booking process. We can help set up the website flow so
+                  clients are guided to provide required vaccination details, upload
+                  records if needed, or complete required forms before appointments.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  What if I already have a site on Wix, Squarespace, or PetExec's free site?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center ">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  You can keep your existing website while upgrading your branding, SEO,
+                  and customer experience. We can either improve your current site or
+                  build a new conversion-focused website and help you transition smoothly
+                  without losing your online presence.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  Do you do ongoing SEO or content writing after launch?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  Yes. We offer ongoing SEO and content support after launch, including
+                  blog content, local SEO improvements, Google Business Profile
+                  optimization, and strategies to help your pet grooming business
+                  continue growing over time.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4 min-w-0">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  How do you handle multi-location pet care businesses?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  We build scalable solutions for multi-location pet care businesses,
+                  including location-specific pages, local SEO strategies, Google Business
+                  Profile optimization, and content tailored to each service area to help
+                  every location attract local customers.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  Can you surface reactive-dog or special-needs policies?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  Yes. We can highlight reactive-dog, senior, and special-needs pet
+                  policies clearly on your website. We can create dedicated policy
+                  sections, intake questions, and booking guidance so pet parents
+                  understand requirements before scheduling an appointment.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  What happens after the 30-day support window?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  After the 30-day support window, your website remains yours and
+                  continues running normally. If you need ongoing updates, SEO, content,
+                  or additional support, we offer optional maintenance and growth services.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- item -->
+          <div class="petgrooming-faq-item border-b border-[#650B14] pb-3 md:pb-5 mb-3 md:mb-5 cursor-pointer">
+
+            <!-- Trigger Row -->
+            <div class="petgrooming-faq-trigger w-full flex items-center justify-between text-left gap-4">
+
+              <!-- Question -->
+              <div class="flex items-center space-x-2 md:space-x-4">
+
+                <img src="assets/images/petgrooming-faq-q.svg" alt="question"
+                  class="shrink-0 w-9 sm:w-12 md:w-16 object-contain">
+
+
+                <h3
+                  class="font-sekuya text-[#650B14] text-[12px] sm:text-base md:text-lg leading-[110%] md:leading-[130%]">
+                  How does this compare to PetExec's website builder or Gingr's marketing tools?
+                </h3>
+
+              </div>
+
+
+              <!-- Plus Icon -->
+              <span class="petgrooming-faq-icon shrink-0 flex items-center justify-center">
+
+                <svg class="petgrooming-faq-svg w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32" fill="none">
+
+                  <rect x="15" width="2" height="32" fill="#650B14" />
+                  <rect y="15" width="32" height="2" fill="#650B14" />
+
+                </svg>
+
+              </span>
+
+            </div>
+
+
+            <!-- Answer Area -->
+            <div class="petgrooming-faq-answer-wrapper overflow-hidden">
+
+              <div class="petgrooming-faq-answer">
+
+                <p
+                  class="font-nunito text-[#6E484C] text-sm sm:text-base md:text-lg leading-[130%] mt-4 pl-11 sm:pl-16 md:pl-20">
+
+                  PetExec and Gingr are great for managing pet care operations, but our focus is different — we build a
+                  custom,
+                  conversion-focused website with branding, SEO, local search strategy, and content designed to attract
+                  new
+                  customers. Your existing pet care software can continue handling bookings, client management, and
+                  daily
+                  operations.
+
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+  <!-- FAQ section -->
+
+
+  <!-- cta section start -->
+  <section class="cta-sections  overflow-hidden section-padding bg-[#650B14] text-center relative">
+    <img src="assets/images/shape-top.png"
+      class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="">
+    <img src="assets/images/shape-right.png"
+      class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+      alt="">
+
+    <div class="container">
+      <div class="cta-wrap z-80 relative">
+        <div class="max-w-227.5 mx-auto">
+
+          <div class="text-center max-w-227.5 mx-auto sm:mb-12 mb-6">
+            <h2
+              class="font-sekuya text-white text-lg sm:text-2xl md:text-3xl lg:text-[40px] leading-[110%] mb-4 md:mb-6">
+              Ready to turn searches into bookings?
+            </h2>
+            <p class="text-white text-sm sm:text-base md:text-lg leading-[130%]">
+              Book a free call. We'll audit your website, identify missed opportunities, and recommend the best next
+              steps.
+            </p>
+
+            <div class="flex items-stretch justify-center w-full">
+              <a href="#"
+                class="mt-5 md:mt-8 inline-block rounded-full bg-[#D8443F] px-4 py-2 lg:px-8 lg:py-4 text-[12px] lg:text-sm font-sekuya text-white transition hover:bg-[#E6615C]">
+                Book A Free 15-Min Call
+              </a>
+            </div>
+          </div>
+
+
+
+        </div>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- cta section end -->
+
+
+  <!-- footer section start -->
+  <footer class="relative ">
+    <div class="bg-gradient-to-b bg-[#650B14] text-white  border-t border-b border-[#7E323A] ">
+      <div class="container">
+        <!-- Desktop Grid Layout -->
+        <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+
+          <div
+            class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#56614C]">
+            <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+              <!-- Services Column -->
+              <div class="">
+                <p class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Services</p>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="mobile-app-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">MOBILE
+                      APP DESIGN</a></li>
+                  <li><a href="dashboard-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">DASHBOARD
+                      DESIGN</a></li>
+                  <li><a href="website-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">WEBSITE
+                      DESIGN</a></li>
+                  <li><a href="web-application-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">WEB
+                      APP DESIGN</a></li>
+                  <li><a href="saas-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">SAAS
+                      DESIGN</a></li>
+                  <li><a href="branding-design.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">BRANDING</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Pixxen Column -->
+              <div class="">
+                <p class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Pixxen</p>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="about.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">ABOUT</a>
+                  </li>
+                  <li><a href="contact.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">CONTACT</a>
+                  </li>
+                  <li><a href="career.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">CAREER</a>
+                  </li>
+                  <li><a href="team.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">TEAM</a>
+                  </li>
+                </ul>
+
+
+              </div>
+
+              <!-- Resources Column -->
+              <div class="">
+                <p class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Resources</p>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="case-study.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">CASE
+                      STUDIES</a>
+                  </li>
+                  <li><a href="blog.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">BLOGS</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Legal Column -->
+              <div class="">
+                <p class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6">Legal</p>
+                <ul class="space-y-2 lg:space-y-3">
+                  <li><a href="terms.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">TERMS</a>
+                  </li>
+                  <li><a href="privacy.html"
+                      class="text-white hover:text-[#FFC258] transition-colors text-[12px] sm:text-sm lg:text-base">PRIVACY</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#56614C] lg:border-0 md:block hidden">
+              <p class="text-white text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+            </div>
+          </div>
+
+          <!-- Newsletter Column -->
+          <div
+            class="md:pl-10 lg:pl-14 md:border-l  border-[#7E323A] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5">
+            <div>
+              <p class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4">Join 5,000+
+                design lovers.</p>
+              <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">Monthly design insights, case
+                studies, and
+                inspiration straight to your inbox.</p>
+
+              <!-- Email Input -->
+              <div class="relative mb-3 md:mb-8 lg:mb-12">
+                <input type="email" placeholder="Email address"
+                  class="w-full bg-transparent border border-[#7E323A] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#ffffff] focus:outline-none focus:border-[#FFC258] transition-colors text-sm lg:text-base pr-14" />
+                <button
+                  class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#7E323A] hover:bg-[#FFC258] p-5 rounded-r-2xl transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
+                    <path
+                      d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                      fill="white" />
+                  </svg>
+
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2">
+              <a href="#"
+                class="bg-[#7E323A] hover:bg-[#FFC258] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+              <a href="#"
+                class="bg-[#7E323A] hover:bg-[#FFC258] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+              <a href="#"
+                class="bg-[#7E323A] hover:bg-[#FFC258] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                    fill="white" />
+                </svg>
+
+
+              </a>
+              <a href="#"
+                class="bg-[#7E323A] hover:bg-[#FFC258] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                    fill="white" />
+                </svg>
+
+              </a>
+            </div>
+            <!-- Copyright -->
+            <div class="mt-1 flex justify-center md:hidden ">
+              <p class="text-[#759187] text-sm text-center lg:text-left">© 2026 PIXXEN</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div
+      class="bg-gradient-to-b from-[#650B14] to-[#FFC258] sticky -z-10 bottom-0 left-0 w-full  flex justify-center items-end">
+      <div class="flex justify-center text-center">
+        <img src="assets/images/petgrooming-footer-logo.svg" class="img-fluid w-full object-contain" alt="footerlogo">
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js">
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
